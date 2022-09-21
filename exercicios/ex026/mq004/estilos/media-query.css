@@ -1,1 +1,22 @@
 @charset "UTF-8";
+/* breakpoints
+pquenas telas: 600px 
+Celular: 600px até 786px
+Tablet: 768 até 992px
+Desktop: 992 até 1200
+Grandes telas: acima de 1200
+*/ 
+@media print{ 
+
+}
+@media screen and (min-width: 768px) and (max-width: 922px){
+    body{
+        background: url();
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+@media screen and (min-width: 1200px){
+    
+}
