@@ -7,8 +7,9 @@
     <title>Menu haburguinho</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media_queries.css">
 </head>
-<body>
+<body onresize="mudou()">
     <header>
         <h1>Meu site</h1>
         <i id="burguer" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
@@ -31,6 +32,14 @@
         </article>
     </main>
     <script>
+        function mudou() {
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else{
+                itens.style.display = 'none'
+            }
+        }
         function clickmenu() {
             if(itens.style.display == 'block'){
                 itens.style.display = 'none'
